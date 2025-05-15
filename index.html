@@ -1,30 +1,44 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="shortcut icon" href="imagens/pokemon_go_play_game_cinema_film_movie_icon-icons.com_69163.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+  <!-- Links -->
+  <link rel="icon" href="imagens/pokemon_go_play_game_cinema_film_movie_icon-icons.com_69163.ico">
+  <link rel="stylesheet" href="./css/style.css">
 
-    <title>Pokedex</title>
+  <!-- Main JS -->
+  <script defer src="./js/script.js"></script>
+
+  <title>Pokédex</title>
 </head>
 <body>
+  
+  <main>
+    <img src="https://i.pinimg.com/originals/66/36/d3/6636d37ba22a391c6353b1436a81f656.gif" alt="pokemon" class="pokemon__image">
 
-    <main>
-        <img src="https://i.pinimg.com/originals/66/36/d3/6636d37ba22a391c6353b1436a81f656.gif" alt="pokemon" class="pokemon__image">
+    <h1 class="pokemon__data">
+      <span class="pokemon__number">94</span> -
+      <span class="pokemon__name">gengar</span>
+    </h1>
 
-        <h1 class="Pokemon__data">
+    <form class="form">
+      <input
+        type="search"
+        class="input__search"
+        placeholder="Name or Number"
+        required
+      />
+    </form>
 
-            <span class="pokemon__number">94</span> -
-            <span class="pokemon__name">gengar</span>
+    <div class="buttons">
+      <button class="button btn-prev">Prev &lt;</button>
+      <button class="button btn-next">Next &gt;</button>
+    </div>
 
+    <img src="imagens/pokedex.png" alt="pokedex" class="pokedex">
+  </main>
 
-        </h1>
-
-        <img src="imagens/pokedex.png" alt="Pokedex" class="pokedex">
-    </main>
-
-    
 </body>
 </html>
